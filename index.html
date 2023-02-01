@@ -5,21 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://kit.fontawesome.com/26ce03098e.js" crossorigin="anonymous"></script>
     <script src="https://cdn.tailwindcss.com"></script>
 
 </head>
 <body>
     <!--nav section-->
-    <nav class="bg-white h-20 fixed top-0 right-0 left-0">
+    <nav class="bg-white">
  <div 
- class="flex justify-between items-center h-20 w-full max-w-7xl mx-auto font-mono px-5">
+ class="flex flex-col md:flex-row md:justify-between items-center  w-full max-w-7xl mx-auto font-mono md:px-5 py-5  ">
     <h2 class="text-2xl">Justice</h2>
-    <ul class="flex text-lg gap-8">
+    <ul class="flex flex-col md:flex-row text-lg md:gap-8">
         <li>Home</li>
-        <li>Services ></li>
-        <li>Cases ></li>
-        <li>Blog ></li>
-        <li>Contact Us ></li>
+        <li>Services <span class="hidden md:inline">></span></li>
+        <li>Cases <span class="hidden md:inline">></span></li>
+        <li>Blog <span class="hidden md:inline">></span></li>
+        <li>Contact Us <span class="hidden md:inline ">></span></li>
     </ul>
     <button class="bg-orange-500 px-3 rounded text-white hover:bg-sky-600">Free Consultation</button>
 </div>
@@ -46,7 +47,7 @@ class=" h-screen pt-20 bg-[url('./images/banner.png')] bg-cover">
     </div>
 
 <section class="py-40">
-   <div class="  w-full max-w-7xl mx-auto grid grid-cols-3 ">
+   <div class="  w-full max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 ">
     <div class="p-20 flex flex-col items-center justify-center space-y-4  px-10 border-b">
         <img src="images/business.png" alt="">
         <h2 class="text-3xl">Business Law</h2>
@@ -95,5 +96,55 @@ class=" h-screen pt-20 bg-[url('./images/banner.png')] bg-cover">
     
    </div>
 </section>
+<!--client area-->
+<div class=" flex flex-col items-center space-y-3 mt-16">
+    <h2 class="text-3xl font-bold">What Our Client Say</h2>
+    <p class="text-lg w-1/2 text-center">There are several types of law you'll come across during your legal studies.our clients are fully sattisfied with our work</p>
+    </div>
+    <!--designer-->
+     <section class=" h-screen pt-20 bg-[url('./images/banner.png')] transparent bg-cover inset-0 bg-gray-500 bg-opacity-80 ">
+        
+<div class="h-full w-full max-w-7xl mx-auto px-5 flex justify-center ">
+    <div class="flex flex-col items-center">
+         <img class=" rounded-3xl w-12" src="images/uix.jpg" alt="">
+         <i class="fa-solid fa-less-than"></i>
+        <h3 class="text-white text-5xl">Awlad Hossain</h3> 
+        <p class="text-white mx-w-lg">UIX Designer</p>
+        <P class="text-white text-lg w-1/2 text-center">UX designers are expected to wear many different hats! Well take a closer look at what a UX designer does in section two. First, lets consider where the term UX design comes from and how it has evolved. </p> 
+        
+  </div>
+</section>
+    <!--question-->
+   
+    <div
+    class=" flex flex-col items-center space-y-3 mt-16 mb-10">
+     <h2 class="text-3xl font-bold">Frequently Asked Any Questions</h2>
+        <p class="text-lg w-1/2 text-center">There are some questions answer which people wants to know</p>
+        </div>
+       <section class="flex flex-col md:flex-row mx-2 md:mx-20">
+        <div class="space-y-4 max-w-lg  border">
+        <div class=" md:px-7 bg-slate-200  md:py-6 rounded">
+ <h2 class="text-lg md:text-2xl font-bold">1 Differences between  Flexbox and CSS Grid?<span> - </span></h2>
+         <p>Ans: Flexbox was designed specifically for one-dimensional layouts, while CSS Grid is engineered to enable two-dimensional layouts. Therefore, CSS Grid can easily render rows and columns simultaneously.</p>
+        </div>
+        <div class="px-7 bg-slate-200 py-6 rounded">
+     <h2 class="text-2xl font-bold">2.what is the purpose of media query? <span> + </span></h2>
+            <p>Ans:Media queries allow you to apply CSS styles depending on a device's general type (such as print vs. screen) or other characteristics such as screen resolution or browser viewport width.</p>
+        </div>
+        <div class="px-7 bg-slate-200 py-6 rounded">
+<h2 class="text-2xl font-bold">3.what is css box model and how does it work? <span> +</span></h2>
+            <p>Ans:A box in CSS consists of a content area, which is where any text, images, or other HTML elements are displayed. This is optionally surrounded by padding, a border, and a margin, on one or more sides. The box model describes how these elements work together to create a box as displayed by CSS</p>
+        </div>
+        <div class="px-7 bg-slate-200 py-6 rounded">
+            <h2 class="text-2xl font-bold">4.what is semantic tag? <span> + </span></h2>
+            <p>The semantic HTML tags help the search engines and other user devices to determine the importance and context of web pages. The pages made with semantic elements are much easier to read. It has greater accessibility. It offers a better user experience.</p>
+        </div>
+    </div>
+    <div class="1/2">
+        <img src="images/faq.png" alt="">
+    </div>
+    </section>
+<!--form-->
+    
 </body>
 </html>
